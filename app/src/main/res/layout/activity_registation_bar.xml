@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10sp"
+    android:background="@drawable/img_1"
+    android:layout_height="match_parent"
+    tools:context=".RegistationBar">
+
+    <EditText
+        android:id="@+id/editText"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="15sp"
+        android:paddingLeft="20sp"
+        android:layout_width="match_parent"
+        android:background="@drawable/editbg"
+        android:layout_height="50sp"
+        android:layout_marginTop="135dp"
+
+        android:hint="Enter your user name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:background="@drawable/editbg"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:paddingLeft="20sp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="15sp"
+        android:layout_marginTop="51dp"
+        android:hint="Enter your email "
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="15sp"
+        android:paddingLeft="20sp"
+        android:hint="Enter password"
+        android:background="@drawable/editbg"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#4491CD"
+        android:text=" Confirm Register"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
